@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dkorta-costgov_jd244"
+version = "0.1.0"
+description = "按段落统计成本与容量治理专家·检索召回的漏斗分析相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "dkorta" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://dkorta.github.io"
+Repository = "https://github.com/dkorta/costgov_jd244"
+Issues = "https://github.com/dkorta/costgov_jd244/issues"
+
+[project.scripts]
+costgov_jd244 = "costgov_jd244:main"
+
+[tool.setuptools]
+py-modules = ["costgov_jd244"]
